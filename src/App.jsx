@@ -11,7 +11,7 @@ function App() {
         <h1 className="text-3xl font-bold">Secure Login Portal.</h1>
         <p className="text-center">Acess your dashboard securely with our protected login system. <br /> Your data is encrypted and secure.</p>
       </div>
-
+        <p>teste</p>
       {/* Direita */}
       <div className="bg-white w-1/2 h-full">
         {/* Container do formulário */}
