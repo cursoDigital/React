@@ -1,4 +1,7 @@
 import LoginImage from "./assets/login.svg"
+import Error404 from "./Error404"
+import Google from './assets/google.svg'
+import Facebook from './assets/facebook.svg'
 
 function App() {
   return (
@@ -11,7 +14,7 @@ function App() {
         <h1 className="text-3xl font-bold">Secure Login Portal.</h1>
         <p className="text-center">Acess your dashboard securely with our protected login system. <br /> Your data is encrypted and secure.</p>
       </div>
-        <p>teste</p>
+
       {/* Direita */}
       <div className="bg-white w-1/2 h-full">
         {/* Container do formulário */}
@@ -49,10 +52,29 @@ function App() {
             </div>
 
             {/* Botão */}
-            <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full">Sing in</button>
+            <button type="button"  onClick={Error404} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full cursor-pointer">Sing in</button>
           </main>
 
+            {/* Footer */}
+          <div className="mt-3">
+            <p>Or continue with</p>
+          </div>
 
+            {/* Redes sociais */}
+            <div className="flex w-[100%] justify-between mt-7">
+              {/* Google */}
+              <div className="flex items-center rounded-sm border-1 border-gray-300 px-20 py-2 cursor-pointer">
+                <img src={Google} alt="Logo google" className="w-5 h-5 mr-5" />
+                <div>Google</div>
+              </div>
+              {/* Facebook */}
+              <div className="flex items-center rounded-sm border-1 border-gray-300 px-20">
+                <img src={Facebook} alt="Logo facebook" className="w-5 h-5 mr-5" />
+                <p>Facebook</p>
+              </div>
+
+            </div>
+            <p className="mt-5">Don't have an account? <a href={Error404} className="cursor-pointer text-blue-600/100">Sign up</a></p>
         </form>
       </div>
     </main>
