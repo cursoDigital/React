@@ -1,5 +1,4 @@
 import LoginImage from "./assets/login.svg"
-import Error404 from "./Error404"
 import Google from './assets/google.svg'
 import Facebook from './assets/facebook.svg'
 
@@ -52,7 +51,7 @@ function App() {
             </div>
 
             {/* Botão */}
-            <button type="button"  onClick={Error404} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full cursor-pointer">Sing in</button>
+            <button type="button"  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-full cursor-pointer">Sing in</button>
           </main>
 
             {/* Footer */}
@@ -74,7 +73,7 @@ function App() {
               </div>
 
             </div>
-            <p className="mt-5">Don't have an account? <a href={Error404} className="cursor-pointer text-blue-600/100">Sign up</a></p>
+            <p className="mt-5">Don't have an account? <a className="cursor-pointer text-blue-600/100">Sign up</a></p>
         </form>
       </div>
     </main>
